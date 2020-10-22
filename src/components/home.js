@@ -6,12 +6,7 @@ const Home = () => {
   return (
     <div className="app">
       <h1>hi</h1>
-      <a href="/first-challenge" target="_blank" rel="noopener noreferrer">
-        First Challenge
-        <span aria-label="External link">
-          <i aria-hidden="true" className="fas fa-external-link-alt" />
-        </span>
-      </a>
+      <a href="/stripe-menu">Stripe Menu</a>
     </div>
   );
 };
