@@ -4,14 +4,14 @@ import { I18nextProvider } from "react-i18next";
 import { BrowserRouter, Route } from "react-router-dom";
 
 import Home from "./components/home";
-// import Detail from "./components/detail";
+import FirstChallenge from "./components/FirstChallenge";
 import i18n from "./locales/i18n-config";
 
 const App = () => (
   <BrowserRouter>
     <React.Fragment>
       <Route exact path="/" component={Home} />
-      {/* <Route exact path="/kardinal" component={Detail} /> */}
+      <Route exact path="/first-challenge" component={FirstChallenge} />
     </React.Fragment>
   </BrowserRouter>
 );
