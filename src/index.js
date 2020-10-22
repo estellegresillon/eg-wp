@@ -1,17 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import { hydrate, render } from "react-dom";
+import { I18nextProvider } from "react-i18next";
+import { BrowserRouter, Route } from "react-router-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+import Home from "./components/home";
+// import Detail from "./components/detail";
+import i18n from "./locales/i18n-config";
+
+const App = () => (
+  <BrowserRouter>
+    <React.Fragment>
+      <Route exact path="/" component={Home} />
+      {/* <Route exact path="/kardinal" component={Detail} /> */}
+    </React.Fragment>
+  </BrowserRouter>
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const rootElement = document.getElementById("root");
+
+if (rootElement.hasChildNodes()) {
+  hydrate(
+    <I18nextProvider i18n={i18n}>
+      <App />
+    </I18nextProvider>,
+    rootElement
+  );
+} else {
+  render(
+    <I18nextProvider i18n={i18n}>
+      <App />
+    </I18nextProvider>,
+    rootElement
+  );
+}
