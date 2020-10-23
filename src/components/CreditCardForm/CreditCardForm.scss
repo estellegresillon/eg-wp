@@ -1,0 +1,18 @@
+@import "mixins";
+
+#Credit-Card-Form {
+  @include flex;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffe8eb, #f5a8b5);
+
+  .form-container {
+    position: relative;
+    @include flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 100px rgba(50, 50, 93, 0.4);
+  }
+}

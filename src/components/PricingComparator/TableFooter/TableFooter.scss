@@ -14,7 +14,8 @@
     .choose-button {
       @include flex;
       padding: 10px 15px;
-      background-color: #ff6297;
+      background-color: #eb2e6d;
+      //background-color: #ff6297;
       color: white;
       text-transform: uppercase;
       font-weight: 700;
@@ -30,7 +31,7 @@
       }
 
       &:hover {
-        background-color: #ff80ab;
+        background-color: #eb2e6d;
         box-shadow: 0 10px 30px rgba(34, 34, 206, 0.5);
       }
     }
