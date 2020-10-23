@@ -17,7 +17,8 @@ const PricingComparator = () => {
         <h1>Choose your plan</h1>
         <h2>
           This is a pricing component. Hover the table below to see it's
-          complete design.
+          complete design. You can also toggle the pricing amount per month or
+          per year.
         </h2>
         <div className="pricing-table">
           <TableHeader />

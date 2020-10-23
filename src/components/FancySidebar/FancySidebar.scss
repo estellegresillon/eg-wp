@@ -9,11 +9,32 @@
   .container {
     width: calc(100% - 85px);
     @include flex;
+    position: relative;
 
     h1 {
       color: white;
       font-size: 120px;
       margin-top: 0px;
+      border-top: 15px solid white;
+      border-bottom: 15px solid white;
+    }
+
+    .logout-button {
+      position: absolute;
+      text-decoration: none;
+      border: 2px solid #fd0076;
+      color: #fd0076;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 10px 20px;
+      @include flex;
+      bottom: 50px;
+
+      &:hover {
+        background-color: #fd0076;
+        color: white;
+      }
     }
   }
 

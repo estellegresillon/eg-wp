@@ -35,7 +35,10 @@ const FancySidebar = () => {
         </Link>
       </div>
       <div className="container">
-        <h1>FANCY MENU</h1>
+        <h1>FANCY SIDEBAR</h1>
+        <Link className="logout-button" to="/">
+          GO BACK
+        </Link>
       </div>
     </div>
   );
