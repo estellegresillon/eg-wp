@@ -1,0 +1,23 @@
+@import "mixins";
+
+#Fancy-Sidebar {
+  display: flex;
+  height: 100vh;
+  background-color: #efefef;
+
+  nav {
+    @include flex;
+    height: 100%;
+    width: 80px;
+    background-color: white;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: 15px 0;
+      }
+    }
+  }
+}
