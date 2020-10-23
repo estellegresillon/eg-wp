@@ -13,6 +13,7 @@ const MenuItem = ({ item, background, nav }) => {
         this.classList.add("trigger-enter-active");
       }
     }, 150);
+
     background.current.classList.add("open");
     linkRef.current.style.setProperty("color", "red");
 
@@ -51,9 +52,9 @@ const MenuItem = ({ item, background, nav }) => {
         {item.name}
       </div>
       <div ref={dropdownRef} className={`dropdown ${item.name}`}>
-        {item.description.map((itm) => {
-          return <p>{itm}</p>;
-        })}
+        {item.description.map((itm) => (
+          <p key={itm}>{itm}</p>
+        ))}
       </div>
     </li>
   );

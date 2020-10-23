@@ -3,16 +3,23 @@ import { hydrate, render } from "react-dom";
 import { I18nextProvider } from "react-i18next";
 import { BrowserRouter, Route } from "react-router-dom";
 
-import "./index.scss";
-import Home from "./components/home";
-import StripeMenu from "./components/StripeMenu";
-import i18n from "./locales/i18n-config";
+import "assets/styles/base.scss";
+import Home from "components/Home";
+import { FRONT_END_CHALLENGES } from "utils";
+import i18n from "locales/i18n-config";
 
 const App = () => (
   <BrowserRouter>
     <React.Fragment>
       <Route exact path="/" component={Home} />
-      <Route exact path="/stripe-menu" component={StripeMenu} />
+      {FRONT_END_CHALLENGES.map((challenge) => (
+        <Route
+          exact
+          path={challenge.link}
+          component={challenge.component}
+          key={challenge.name}
+        />
+      ))}
     </React.Fragment>
   </BrowserRouter>
 );

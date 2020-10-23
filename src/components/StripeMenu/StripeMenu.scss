@@ -1,4 +1,4 @@
-.Stripe-Menu {
+#Stripe-Menu {
   width: 100vw;
   height: 100vh;
   background-color: white;
@@ -40,7 +40,7 @@
     h2 {
       font-size: 18px;
       font-weight: 300;
-      margin-bottom: 50px;
+      margin-bottom: 25%;
     }
 
     .go-back-button {
@@ -51,19 +51,17 @@
       font-size: 14px;
       cursor: pointer;
       font-weight: 700;
+      text-decoration: none;
+      color: white;
+      box-shadow: 0 10px 50px rgba(50, 50, 93, 0.3);
+      background-color: black;
+      transition: box-shadow 0.5s ease;
 
       &:hover {
         background-color: red;
         border-color: red;
-
-        a {
-          color: white;
-        }
-      }
-
-      a {
-        text-decoration: none;
-        color: black;
+        color: white;
+        box-shadow: 0 20px 50px rgba(50, 50, 93, 0.5);
       }
     }
   }

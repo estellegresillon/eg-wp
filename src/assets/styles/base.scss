@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "Bigilla";
-  src: local("Bigilla"), url(./fonts/Bigilla.otf) format("woff");
-}
+@import "fonts";
 
 body {
   margin: 0;

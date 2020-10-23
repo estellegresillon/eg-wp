@@ -1,0 +1,14 @@
+@import "mixins";
+
+#Pricing-Comparator {
+  @include flex;
+  height: 100vh;
+  background: linear-gradient(45deg, #bee0f9, #97cefb);
+
+  .pricing-container {
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+  }
+}
