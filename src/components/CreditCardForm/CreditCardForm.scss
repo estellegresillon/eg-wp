@@ -3,7 +3,7 @@
 #Credit-Card-Form {
   @include flex;
   height: 100vh;
-  background: linear-gradient(135deg, #ffe8eb, #f5a8b5);
+  background: linear-gradient(30deg, #bef9f9, #89c8fd);
 
   .form-container {
     position: relative;
@@ -14,5 +14,28 @@
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 20px 100px rgba(50, 50, 93, 0.4);
+
+    .credit-card-container {
+      position: absolute;
+      height: 200px;
+      width: 350px;
+      top: -100px;
+      background-color: transparent;
+
+      .credit-card-front,
+      .credit-card-back {
+        @include flex;
+        color: white;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+        transition: 2s;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        background-color: pink;
+        font-weight: 700;
+      }
+    }
   }
 }
