@@ -2,5 +2,14 @@
   "hero-scene": {
     "front-end": "Front-End Development",
     "availability": "Available in January 2021"
+  },
+  "pricingComparator": {
+    "item": {
+      "unlimitedCollaborators": "Unlimited collaborators",
+      "unlimitedComponent": "Unlimited components",
+      "multipleProjectsAndStyleGuides": "Multiple projects and style guides",
+      "unlimitedVersionsPerScreen": "Unlimited versions per screen",
+      "userManagement": "User management"
+    }
   }
 }
