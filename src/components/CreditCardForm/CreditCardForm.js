@@ -7,19 +7,18 @@ import CCFormContainer from "./CCFormContainer";
 
 const CreditCardForm = () => {
   const [isCardReversed, setIsCardReversed] = useState(false);
-  const [isNameFocused, setIsNameFocused] = useState(false);
-  const [isDateFocused, setIsDateFocused] = useState(false);
-  const [isCardNumberFocused, setIsCardNumberFocused] = useState(false);
-  const [cardNumber, setCardNumber] = useState("");
-  const [fullName, setFullName] = useState("");
-  const [CCV, setCCV] = useState("");
-  const [month, setMonth] = useState("");
-  const [year, setYear] = useState("");
   const [cardBg, setCardBg] = useState(0);
-  const [cardInfos, setCardInfos] = useState({});
+  const [focus, setFocus] = useState("");
+  const [cardInfos, setCardInfos] = useState({
+    cardNumber: "",
+    fullName: "",
+    CCV: "",
+    month: "",
+    year: "",
+  });
 
   const handleCardInfos = (input, value) => {
-    console.log(value);
+    setCardInfos({ ...cardInfos, [input]: value });
   };
 
   return (
@@ -29,38 +28,23 @@ const CreditCardForm = () => {
           <CardFrontSide
             isCardReversed={isCardReversed}
             cardBg={cardBg}
-            isCardNumberFocused={isCardNumberFocused}
-            cardNumber={cardNumber}
-            isNameFocused={isNameFocused}
-            fullName={fullName}
-            isDateFocused={isDateFocused}
-            month={month}
-            year={year}
+            focus={focus}
+            cardInfos={cardInfos}
           />
           <CardBackSide
             isCardReversed={isCardReversed}
-            CCV={CCV}
+            CCV={cardInfos.CCV}
             cardBg={cardBg}
           />
         </div>
 
         <CCFormContainer
           setIsCardReversed={setIsCardReversed}
-          setIsNameFocused={setIsNameFocused}
-          setIsDateFocused={setIsDateFocused}
-          setIsCardNumberFocused={setIsCardNumberFocused}
-          cardNumber={cardNumber}
-          setCardNumber={setCardNumber}
-          fullName={fullName}
-          setFullName={setFullName}
-          CCV={CCV}
-          setCCV={setCCV}
-          month={month}
-          setMonth={setMonth}
-          year={year}
-          setYear={setYear}
+          setFocus={setFocus}
           cardBg={cardBg}
           setCardBg={setCardBg}
+          handleCardInfos={handleCardInfos}
+          cardInfos={cardInfos}
         />
       </div>
     </div>

@@ -10,37 +10,11 @@
     position: relative;
     @include flex;
     flex-direction: column;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 65%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 20px 70px rgba(50, 50, 93, 0.4);
-
-    .cc-form-footer {
-      width: 100%;
-      justify-content: center;
-      display: flex;
-      align-items: center;
-      margin-top: 30px;
-
-      a,
-      div {
-        padding: 10px 20px;
-        color: white;
-        text-decoration: none;
-        font-weight: 700;
-        text-transform: uppercase;
-        background-color: black;
-        font-size: 11px;
-        cursor: pointer;
-        border-radius: 50px;
-        margin: 5px;
-
-        &:hover {
-          background-color: #656565;
-        }
-      }
-    }
 
     .credit-card-container {
       position: absolute;
@@ -68,15 +42,6 @@
         background: #ff006a;
       }
 
-      .card-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: calc(100% - 40px);
-        padding: 10px 20px;
-        height: 50px;
-      }
-
       .card-chip,
       .card-logo {
         height: 30px;
@@ -87,93 +52,6 @@
           right: 20px;
         }
       }
-
-      .cc-back-footer {
-        width: 100%;
-        position: relative;
-      }
-
-      .cc-front-number {
-        width: calc(100% - 40px);
-        margin: 0 10px;
-        font-size: 24px;
-        border: 1px solid transparent;
-        padding: 10px;
-        border-radius: 5px;
-
-        &.is-focused {
-          border-color: #dadada;
-        }
-      }
-
-      .cc-front-name {
-        text-transform: uppercase;
-      }
-
-      .cc-back-ccv-name {
-        color: white;
-        margin-bottom: 5px;
-        margin: 20px 20px 10px 20px;
-      }
-
-      .cc-back-ccv-input {
-        @include flex;
-        margin: 0 20px;
-        background-color: white;
-        border-radius: 5px;
-        color: #333333;
-        height: 30px;
-        width: 55px;
-        font-size: 12px;
-        letter-spacing: 2px;
-        padding-top: 3px;
-      }
-    }
-
-    .full-name-input {
-      text-transform: capitalize;
-    }
-
-    .cc-front-footer {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin: 10px;
-
-      &-name {
-        border: 1px solid transparent;
-        padding: 5px 10px;
-        width: 190px;
-        border-radius: 5px;
-
-        &.is-focused {
-          border-color: #dadada;
-        }
-      }
-
-      &-dates {
-        border: 1px solid transparent;
-        padding: 5px 10px;
-        width: 60px;
-        border-radius: 5px;
-
-        &.is-focused {
-          border-color: #dadada;
-        }
-      }
-
-      .footer-name-label,
-      .footer-dates-label {
-        text-transform: uppercase;
-        opacity: 0.7;
-        font-size: 11px;
-      }
-    }
-
-    .cc-front-dates {
-      display: flex;
-      align-items: center;
-      margin-right: 20px;
     }
   }
 }
