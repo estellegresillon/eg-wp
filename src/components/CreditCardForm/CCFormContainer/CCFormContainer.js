@@ -45,7 +45,7 @@ const CCFormContainer = ({
       <Input
         label="CCV"
         id="ccv"
-        type="number"
+        type="tel"
         inputMode="numeric"
         maxLength="3"
         placeholder="XXX"
