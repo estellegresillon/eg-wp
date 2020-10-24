@@ -1,44 +1,66 @@
 import React, { useState } from "react";
-import times from "lodash/times";
-// import { Link } from "react-router-dom";
 
 import "./CreditCardForm.scss";
+import CardFrontSide from "./CardFrontSide";
+import CardBackSide from "./CardBackSide";
+import CCFormContainer from "./CCFormContainer";
 
 const CreditCardForm = () => {
   const [isCardReversed, setIsCardReversed] = useState(false);
+  const [isNameFocused, setIsNameFocused] = useState(false);
+  const [isDateFocused, setIsDateFocused] = useState(false);
+  const [isCardNumberFocused, setIsCardNumberFocused] = useState(false);
+  const [cardNumber, setCardNumber] = useState("");
+  const [fullName, setFullName] = useState("");
   const [CCV, setCCV] = useState("");
+  const [month, setMonth] = useState("");
+  const [year, setYear] = useState("");
+  const [cardBg, setCardBg] = useState(0);
+  const [cardInfos, setCardInfos] = useState({});
 
-  const handleCCVChange = (value) => {
-    if (value.length > 3) {
-      return;
-    }
-    setCCV(value);
+  const handleCardInfos = (input, value) => {
+    console.log(value);
   };
 
   return (
     <div id="Credit-Card-Form">
-      <div className="form-container">
+      <div className="form-wrapper">
         <div className="credit-card-container">
-          <div
-            className="credit-card-front"
-            style={{ transform: isCardReversed ? "rotateY(180deg)" : "none" }}
-          >
-            front
-          </div>
-          <div
-            className="credit-card-back"
-            style={{ transform: isCardReversed ? "none" : "rotateY(180deg)" }}
-          >
-            {times(CCV.length, () => "*")}
-          </div>
+          <CardFrontSide
+            isCardReversed={isCardReversed}
+            cardBg={cardBg}
+            isCardNumberFocused={isCardNumberFocused}
+            cardNumber={cardNumber}
+            isNameFocused={isNameFocused}
+            fullName={fullName}
+            isDateFocused={isDateFocused}
+            month={month}
+            year={year}
+          />
+          <CardBackSide
+            isCardReversed={isCardReversed}
+            CCV={CCV}
+            cardBg={cardBg}
+          />
         </div>
-        <input
-          type="number"
-          className="ccv-input"
-          value={CCV}
-          onChange={(e) => handleCCVChange(e.target.value)}
-          onFocus={() => setIsCardReversed(true)}
-          onBlur={() => setIsCardReversed(false)}
+
+        <CCFormContainer
+          setIsCardReversed={setIsCardReversed}
+          setIsNameFocused={setIsNameFocused}
+          setIsDateFocused={setIsDateFocused}
+          setIsCardNumberFocused={setIsCardNumberFocused}
+          cardNumber={cardNumber}
+          setCardNumber={setCardNumber}
+          fullName={fullName}
+          setFullName={setFullName}
+          CCV={CCV}
+          setCCV={setCCV}
+          month={month}
+          setMonth={setMonth}
+          year={year}
+          setYear={setYear}
+          cardBg={cardBg}
+          setCardBg={setCardBg}
         />
       </div>
     </div>
