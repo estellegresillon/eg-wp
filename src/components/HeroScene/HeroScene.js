@@ -84,6 +84,18 @@ const HeroScene = () => {
         </div>
       </div>
       <div id="about">
+        <img
+          className="big-stripes"
+          src="stripes.svg"
+          alt="stripe"
+          aria-hidden="true"
+        />
+        <img
+          className="medium-stripes"
+          src="stripes.svg"
+          alt="stripe"
+          aria-hidden="true"
+        />
         <img src="floppy.png" alt="floppy" className="floppy" />
         <img src="bulb.png" alt="bulb" className="bulb" />
         <div className="girl-wrapper">
@@ -91,12 +103,21 @@ const HeroScene = () => {
         </div>
         <div className="about-section">
           <h2>About</h2>
+          <img
+            className="small-stripes"
+            src="stripes.svg"
+            alt="stripe"
+            aria-hidden="true"
+          />
           <div className="intro">
             I am Estelle, a front-end developer and a designer. <br />
             <br />
             With a passion for design and interaction, my goal is to create
             websites and apps with{" "}
-            <strong>a high quality design and user experience</strong>.
+            <strong>
+              a clean code, high quality design and a compelling user experience
+            </strong>
+            .
             <br />
             <br />
             Being both a coder and a designer I have global vision of your
@@ -110,17 +131,18 @@ const HeroScene = () => {
             <br />
             <br />
             Always yearning to achieve more, I love participating in new
-            projects professionally and personally. Feel free to contact me as
-            I'd love to hear about your project !
+            projects both professionally and personally. Feel free to contact me
+            as I'd love to hear about your project !
           </div>
           <div className="contact-button">
             let's get started <i className="fas fa-arrow-right" />
           </div>
         </div>
       </div>
-      <div id="skills"></div>
-      <div id="works"></div>
-      <div id="footer"></div>
+      <div id="skills">design: paint / code computuer</div>
+      <div id="works">pro : diamond / perso : folder</div>
+      <div id="contact">mailbox 3D</div>
+      <div id="footer">box</div>
     </>
   );
 };

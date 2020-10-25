@@ -139,6 +139,23 @@
   align-items: center;
   justify-content: space-around;
 
+  .big-stripes {
+    position: absolute;
+    width: 250px;
+    z-index: 0;
+    left: 10%;
+    top: 40%;
+    opacity: 0.5;
+  }
+
+  .medium-stripes {
+    position: absolute;
+    width: 170px;
+    z-index: 0;
+    bottom: 15%;
+    right: -10px;
+  }
+
   .girl-wrapper {
     position: relative;
     @include flex;
@@ -156,13 +173,25 @@
   .about-section {
     width: 40%;
     height: 70%;
+    position: relative;
 
     h2 {
       color: #74bff7;
       font-size: 64px;
       letter-spacing: -2px;
       margin-bottom: 40px;
-      margin-top: 10px;
+      //margin-top: 10px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .small-stripes {
+      position: absolute;
+      width: 120px;
+      z-index: 0;
+      top: 90px;
+      left: -70px;
+      opacity: 0.5;
     }
 
     .intro {
