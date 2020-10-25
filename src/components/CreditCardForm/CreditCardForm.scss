@@ -10,11 +10,12 @@
     position: relative;
     @include flex;
     flex-direction: column;
-    width: 40%;
-    height: 65%;
+    width: 35%;
+    height: 70%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 20px 70px rgba(50, 50, 93, 0.4);
+    margin-top: 60px;
 
     .credit-card-container {
       position: absolute;

@@ -92,6 +92,10 @@ const CCFormContainer = ({
       </div>
     </div>
 
+    <div className="disclaimer">
+      Fill the inputs to see the component in action.
+    </div>
+
     <div className="cc-form-footer">
       <Link to="/" onClick={() => setCardBg(cardBg === 4 ? 0 : cardBg + 1)}>
         Go back
