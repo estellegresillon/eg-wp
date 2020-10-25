@@ -134,7 +134,7 @@
 
 #about {
   position: relative;
-  height: 120vh;
+  height: 140vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -153,7 +153,8 @@
     width: 170px;
     z-index: 0;
     bottom: 15%;
-    right: -10px;
+    right: -40px;
+    opacity: 0.5;
   }
 
   .girl-wrapper {
@@ -174,6 +175,7 @@
     width: 40%;
     height: 70%;
     position: relative;
+    margin-top: 8%;
 
     h2 {
       color: #74bff7;
@@ -202,11 +204,10 @@
       background-color: #74bff7;
       color: white;
       width: 140px;
-      //border: 2px solid #74bff7;
       font-weight: 700;
       border-radius: 50px;
       cursor: pointer;
-      padding: 10px 20px;
+      padding: 15px 35px;
       white-space: nowrap;
       margin-top: 60px;
       box-shadow: 0 5px 30px rgba(50, 50, 93, 0.2);
@@ -217,8 +218,7 @@
       }
 
       &:hover {
-        //background-color: #74bff7;
-        //color: white;
+        background-color: #3faafc;
         box-shadow: 0 8px 35px rgba(50, 50, 93, 0.4);
       }
     }
@@ -317,5 +317,69 @@
   to {
     top: 10%;
     transform: rotate(50deg);
+  }
+}
+
+.dot {
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 1px;
+}
+
+.pink-dot-top {
+  top: 17vh;
+  right: 5vw;
+  background-color: #ec98e1;
+  animation: 5s rotateDots infinite linear;
+}
+
+.pink-dot-bottom {
+  top: 80vh;
+  left: 5vw;
+  background-color: #ec98e1;
+  animation: 5s rotateDots infinite linear;
+}
+
+.blue-dot-top {
+  top: 15vh;
+  left: 5vw;
+  background-color: #74bff7;
+  animation: 5s rotateDots infinite;
+}
+
+.blue-dot-medium {
+  top: 40vh;
+  right: 15vw;
+  background-color: #74bff7;
+  animation: 2s rotateDots infinite;
+}
+
+.yellow-dot-medium {
+  top: 40vh;
+  left: 40vw;
+  background-color: #efcb6c;
+  animation: 2s rotateDots infinite;
+}
+
+.yellow-dot-bottom {
+  bottom: 30vh;
+  right: 20vw;
+  background-color: #efcb6c;
+  animation: 4s rotateDots infinite;
+}
+
+@keyframes rotateDots {
+  from {
+    margin-top: 0px;
+    transform: rotate(0deg);
+  }
+  50% {
+    margin-top: 15px;
+    transform: rotate(180deg);
+  }
+  to {
+    margin-top: 0px;
+    transform: rotate(360deg);
   }
 }

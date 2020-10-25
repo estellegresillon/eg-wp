@@ -96,6 +96,12 @@ const HeroScene = () => {
           alt="stripe"
           aria-hidden="true"
         />
+        <div className="dot pink-dot-top" />
+        <div className="dot pink-dot-bottom" />
+        <div className="dot yellow-dot-medium" />
+        <div className="dot blue-dot-top" />
+        <div className="dot blue-dot-medium" />
+        <div className="dot yellow-dot-bottom" />
         <img src="floppy.png" alt="floppy" className="floppy" />
         <img src="bulb.png" alt="bulb" className="bulb" />
         <div className="girl-wrapper">
