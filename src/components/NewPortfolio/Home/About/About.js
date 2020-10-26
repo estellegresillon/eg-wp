@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./About.scss";
+import Button from "../../common/Button";
 
 const About = () => (
   <div id="About">
@@ -59,9 +60,7 @@ const About = () => (
         both professionally and personally. Feel free to contact me as I'd love
         to hear about your project and engage in new challenges !
       </div>
-      <div className="contact-button">
-        let's get started <i className="fas fa-arrow-right" />
-      </div>
+      <Button label="let's get started" width="140px" />
     </div>
   </div>
 );
