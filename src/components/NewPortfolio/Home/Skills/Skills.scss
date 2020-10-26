@@ -1,0 +1,9 @@
+@import "mixins";
+
+#Skills {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120vh;
+}

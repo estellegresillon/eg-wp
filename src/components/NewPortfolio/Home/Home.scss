@@ -1,0 +1,97 @@
+#Home-Page {
+  font-family: "Gilroy";
+
+  .dot {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    border-radius: 5px;
+  }
+
+  .white-dot-top {
+    top: 25vh;
+    right: 20vw;
+    background-color: white;
+    animation: 2s rotateDots infinite linear;
+  }
+
+  .white-dot-bottom {
+    top: 80vh;
+    left: 5vw;
+    background-color: white;
+    animation: 5s rotateDots infinite;
+  }
+
+  .white-dot-medium {
+    top: 90vh;
+    right: 30vw;
+    background-color: white;
+    animation: 2s rotateDots infinite linear;
+  }
+
+  .white-dot-medium-top {
+    top: 10vh;
+    left: 35vw;
+    background-color: white;
+    animation: 5s rotateDots infinite;
+  }
+
+  /////
+
+  .pink-dot-top {
+    top: 25vh;
+    right: 5vw;
+    background-color: #ec98e1;
+    animation: 5s rotateDots infinite linear;
+  }
+
+  .pink-dot-bottom {
+    top: 80vh;
+    left: 5vw;
+    background-color: #ec98e1;
+    animation: 2s rotateDots infinite;
+  }
+
+  .blue-dot-top {
+    top: 20vh;
+    left: 5vw;
+    background-color: #74bff7;
+    animation: 5s rotateDots infinite;
+  }
+
+  .blue-dot-medium {
+    top: 40vh;
+    right: 15vw;
+    background-color: #74bff7;
+    animation: 2s rotateDots infinite;
+  }
+
+  .dark-blue-dot-medium {
+    top: 45vh;
+    left: 40vw;
+    background-color: #4447b3;
+    animation: 5s rotateDots infinite linear;
+  }
+
+  .dark-blue-dot-bottom {
+    bottom: 30vh;
+    right: 20vw;
+    background-color: #4447b3;
+    animation: 4s rotateDots infinite;
+  }
+
+  @keyframes rotateDots {
+    from {
+      margin-top: 0px;
+      transform: rotate(0deg);
+    }
+    50% {
+      margin-top: 15px;
+      transform: rotate(180deg);
+    }
+    to {
+      margin-top: 0px;
+      transform: rotate(360deg);
+    }
+  }
+}

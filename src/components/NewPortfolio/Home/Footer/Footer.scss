@@ -1,0 +1,11 @@
+@import "mixins";
+
+#Footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  background-image: url("/mesh-2.png");
+  background-size: 100vw;
+}

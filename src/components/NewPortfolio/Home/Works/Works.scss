@@ -1,0 +1,50 @@
+@import "mixins";
+
+#Works {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+  width: 90vw;
+  padding: 0 5vw;
+
+  .column {
+    position: relative;
+    @include flex;
+    width: 40vw;
+    height: 100%;
+    box-shadow: 0 10px 20px rgba(50, 50, 93, 0.1);
+
+    &:first-child {
+      margin-right: 5%;
+    }
+  }
+
+  .pro-left {
+    background-image: url("/mesh-4.png");
+    background-size: 50vw 60vh;
+    border-radius: 15px;
+    color: #4447b3;
+
+    .diamond {
+      position: absolute;
+      width: 20%;
+      top: -10%;
+      right: -5%;
+    }
+  }
+
+  .perso-right {
+    background-color: white;
+    border-radius: 15px;
+    color: #4447b3;
+
+    .folder {
+      position: absolute;
+      width: 30%;
+      top: -10%;
+      right: -5%;
+    }
+  }
+}
