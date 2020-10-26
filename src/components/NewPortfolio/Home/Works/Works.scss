@@ -42,6 +42,8 @@
 
     p {
       font-family: "IBM Plex Sans";
+      width: 60%;
+      text-align: center;
     }
 
     &:first-child {
@@ -55,7 +57,7 @@
   }
 
   .pro-left {
-    background-image: url("/mesh-4.png");
+    background-image: url("/mesh-works.png");
     background-size: 50vw 60vh;
     border-radius: 15px;
 
@@ -92,7 +94,7 @@
   }
 
   .pink-dot-bottom {
-    top: 80vh;
+    top: 75vh;
     left: 5vw;
     background-color: #ec98e1;
     animation: 2s rotateDots infinite;
