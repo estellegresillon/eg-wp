@@ -7,13 +7,13 @@ const Works = () => (
   <div id="Works">
     <div className="pro-left column">
       <img src="diamond.png" alt="pro" className="diamond" />
-      <h3>Freelance missions</h3>
+      <h3>&gt; Freelance missions</h3>
       <p>Take a look at my CV and a detailed timeline of my former missions</p>
       <Button label="check it out" width="110px" />
     </div>
     <div className="perso-right column">
       <img src="folder.png" alt="perso" className="folder" />
-      <h3>Personal projects</h3>
+      <h3>&gt; Personal projects</h3>
       <p>
         Code & UI Challenges, onepages, custom hooks, design & front-end
         resources...

@@ -29,7 +29,7 @@ const About = () => (
       <img src="robot.png" alt="robot" className="robot" />
     </div>
     <div className="about-section">
-      <h2>About</h2>
+      <h2>&gt; About</h2>
       <img
         className="small-stripes"
         src="stripes.svg"

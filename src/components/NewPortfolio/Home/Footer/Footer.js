@@ -2,6 +2,6 @@ import React from "react";
 
 import "./Footer.scss";
 
-const Footer = () => <div id="Footer">FOOTER box</div>;
+const Footer = () => <div id="Footer">COMPAS</div>;
 
 export default Footer;
