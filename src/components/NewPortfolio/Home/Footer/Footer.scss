@@ -5,9 +5,30 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 70vh;
-  background-image: url("/mesh-1.png");
+  height: 80vh;
+  background-image: url("/mesh-7.png");
   background-size: 100vw;
   color: white;
-  z-index: 10;
+  width: 100vw;
+  overflow: hidden;
+
+  .anchor {
+    position: absolute;
+    width: 20%;
+    bottom: 25%;
+    right: 12%;
+    animation: 10s floatingAnchor infinite;
+  }
+
+  @keyframes floatingAnchor {
+    from {
+      bottom: 25%;
+    }
+    50% {
+      bottom: 35%;
+    }
+    to {
+      bottom: 25%;
+    }
+  }
 }

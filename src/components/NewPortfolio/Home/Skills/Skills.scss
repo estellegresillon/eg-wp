@@ -7,9 +7,9 @@
   justify-content: space-around;
   height: 85vh;
   margin: 30vh 5vw 0 5vw;
-  background-color: #e5f3ff;
+  background-color: #d0e9ff;
   background-image: url("/white_stripes_huge.svg");
-  background-size: 110vw 110vh;
+  background-size: 90vw 85vh;
   background-position: center;
   box-shadow: 15px 30px 10px rgba(50, 50, 93, 0.05);
   overflow: hidden;
@@ -150,34 +150,34 @@
       margin-right: 5%;
     }
   }
-}
 
-@keyframes floatingComputer {
-  from {
-    top: 5%;
-    transform: rotate(10deg);
+  @keyframes floatingComputer {
+    from {
+      top: 5%;
+      transform: rotate(10deg);
+    }
+    50% {
+      top: 0%;
+      transform: rotate(0deg);
+    }
+    to {
+      top: 5%;
+      transform: rotate(10deg);
+    }
   }
-  50% {
-    top: 0%;
-    transform: rotate(0deg);
-  }
-  to {
-    top: 5%;
-    transform: rotate(10deg);
-  }
-}
 
-@keyframes floatingPaint {
-  from {
-    top: 5%;
-    transform: rotate(-10deg);
-  }
-  50% {
-    top: 10%;
-    transform: rotate(0deg);
-  }
-  to {
-    top: 5%;
-    transform: rotate(-10deg);
+  @keyframes floatingPaint {
+    from {
+      top: 5%;
+      transform: rotate(-10deg);
+    }
+    50% {
+      top: 10%;
+      transform: rotate(0deg);
+    }
+    to {
+      top: 5%;
+      transform: rotate(-10deg);
+    }
   }
 }

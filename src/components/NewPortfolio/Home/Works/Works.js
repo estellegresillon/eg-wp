@@ -31,7 +31,7 @@ const Works = () => (
       src="stripes.svg"
       alt="stripe"
       aria-hidden="true"
-    />
+    />{" "}
     <div className="dot pink-dot-top" />
     <div className="dot pink-dot-bottom" />
     <div className="dot blue-dot-top" />

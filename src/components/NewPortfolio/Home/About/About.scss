@@ -7,7 +7,8 @@
   align-items: center;
   justify-content: space-around;
   color: #2a2b56;
-  font-family: "IBM Plex Sans";
+  width: 100vw;
+  overflow: hidden;
 
   .big-stripes {
     position: absolute;
@@ -46,9 +47,9 @@
     height: 70%;
     position: relative;
     margin-top: 8%;
+    color: #4447b3;
 
     h2 {
-      color: #4447b3;
       font-size: 64px;
       letter-spacing: -2px;
       margin-bottom: 40px;
@@ -68,6 +69,7 @@
     .intro {
       width: 70%;
       margin-bottom: 50px;
+      font-family: "IBM Plex Sans";
 
       strong {
         color: #74bff7;
@@ -138,67 +140,67 @@
     background-color: #4447b3;
     animation: 4s rotateDots infinite;
   }
-}
 
-@keyframes floatingRobot {
-  from {
-    top: -10%;
+  @keyframes floatingRobot {
+    from {
+      top: -10%;
+    }
+    50% {
+      top: 0%;
+    }
+    to {
+      top: -10%;
+    }
   }
-  50% {
-    top: 0%;
-  }
-  to {
-    top: -10%;
-  }
-}
 
-@keyframes floatingFloppy {
-  from {
-    bottom: 20%;
-    transform: rotate(-20deg);
+  @keyframes floatingFloppy {
+    from {
+      bottom: 20%;
+      transform: rotate(-20deg);
+    }
+    50% {
+      bottom: 25%;
+      transform: rotate(10deg);
+    }
+    to {
+      bottom: 20%;
+      transform: rotate(-20deg);
+    }
   }
-  50% {
-    bottom: 25%;
-    transform: rotate(10deg);
-  }
-  to {
-    bottom: 20%;
-    transform: rotate(-20deg);
-  }
-}
 
-@keyframes floatingBulb {
-  from {
-    top: 15%;
-    transform: rotate(50deg);
+  @keyframes floatingBulb {
+    from {
+      top: 15%;
+      transform: rotate(50deg);
+    }
+    50% {
+      top: 20%;
+      transform: rotate(10deg);
+    }
+    to {
+      top: 15%;
+      transform: rotate(50deg);
+    }
   }
-  50% {
-    top: 20%;
-    transform: rotate(10deg);
-  }
-  to {
-    top: 15%;
-    transform: rotate(50deg);
-  }
-}
 
-@keyframes rotateArrow {
-  from {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(-20deg);
-  }
-  40% {
-    transform: rotate(20deg);
-  }
-  60% {
-    transform: rotate(-20deg);
-  }
-  80% {
-    transform: rotate(20deg);
-  }
-  to {
-    transform: rotate(0deg);
+  @keyframes rotateArrow {
+    from {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(-20deg);
+    }
+    40% {
+      transform: rotate(20deg);
+    }
+    60% {
+      transform: rotate(-20deg);
+    }
+    80% {
+      transform: rotate(20deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
   }
 }

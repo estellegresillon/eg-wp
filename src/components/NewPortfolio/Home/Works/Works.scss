@@ -6,8 +6,8 @@
   align-items: center;
   justify-content: space-around;
   height: 50vh;
-  width: 90vw;
-  padding: 5vw;
+  width: 90%;
+  padding: 5%;
 
   .medium-stripes {
     position: absolute;
@@ -122,34 +122,34 @@
     animation: 4s rotateDots infinite;
     z-index: 2;
   }
-}
 
-@keyframes floatingDiamond {
-  from {
-    top: -25%;
-    transform: rotate(20deg);
+  @keyframes floatingDiamond {
+    from {
+      top: -25%;
+      transform: rotate(20deg);
+    }
+    50% {
+      top: -20%;
+      transform: rotate(0deg);
+    }
+    to {
+      top: -25%;
+      transform: rotate(20deg);
+    }
   }
-  50% {
-    top: -20%;
-    transform: rotate(0deg);
-  }
-  to {
-    top: -25%;
-    transform: rotate(20deg);
-  }
-}
 
-@keyframes floatingFolder {
-  from {
-    bottom: -15%;
-    transform: rotate(20deg);
-  }
-  50% {
-    bottom: -10%;
-    transform: rotate(-10deg);
-  }
-  to {
-    bottom: -15%;
-    transform: rotate(20deg);
+  @keyframes floatingFolder {
+    from {
+      bottom: -15%;
+      transform: rotate(20deg);
+    }
+    50% {
+      bottom: -10%;
+      transform: rotate(-10deg);
+    }
+    to {
+      bottom: -15%;
+      transform: rotate(20deg);
+    }
   }
 }

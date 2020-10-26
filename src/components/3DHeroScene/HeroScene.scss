@@ -98,16 +98,16 @@
       text-decoration: underline;
     }
   }
-}
 
-@keyframes floatingMailbox {
-  from {
-    top: 35%;
-  }
-  50% {
-    top: 20%;
-  }
-  to {
-    top: 35%;
+  @keyframes floatingMailbox {
+    from {
+      top: 35%;
+    }
+    50% {
+      top: 20%;
+    }
+    to {
+      top: 35%;
+    }
   }
 }
