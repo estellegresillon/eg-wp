@@ -141,20 +141,20 @@ const HeroScene = () => {
             .
             <br />
             <br />
-            Being both a coder and a designer I have global vision of your
-            product and your needs :{" "}
-            <strong>I code thinking about the design</strong> and{" "}
+            Being both a coder and a designer, I can bring a comprehensive
+            outlook to your product.{" "}
+            <strong>I code thinking about the design</strong>, and{" "}
             <strong>
-              I can provide design counselling knowing what is doable on the
-              tech side
+              I can provide in-depth design guidance, with an understanding of
+              the feasibility of the tech side
             </strong>
             .
             <br />
             <br />
             Always yearning to achieve more, I love participating in new
-            projects both professionally and personally. Feel free to contact me
-            as I'd love to hear about your project and engage in new challenges
-            !
+            projects, both professionally and personally. Feel free to contact
+            me as I'd love to hear about your project and engage in new
+            challenges !
           </div>
           <div className="contact-button">
             let's get started <i className="fas fa-arrow-right" />
