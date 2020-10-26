@@ -1,0 +1,113 @@
+@import "mixins";
+
+#ThreeHeroScene {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("/mesh-6.png");
+  background-size: 100vw 100vh;
+  font-family: "Gilroy";
+
+  nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: calc(100% - 120px);
+    padding: 30px 60px;
+    color: white;
+
+    .logo {
+      padding-left: 4px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: white;
+      line-height: 15px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+  }
+
+  h1 {
+    font-size: 72px;
+    margin-left: 10%;
+    font-weight: 700;
+    color: white;
+    margin-top: -20px;
+    z-index: 2;
+    width: 60%;
+    line-height: 60px;
+  }
+
+  .subtitle {
+    margin-left: 10%;
+    color: white;
+    margin-top: -20px;
+    font-weight: 400;
+  }
+
+  .hero-mailbox {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    width: 25%;
+    z-index: 1;
+    animation: 10s floatingMailbox infinite;
+    transition: 1s all ease;
+  }
+
+  .availability {
+    position: absolute;
+    bottom: 5%;
+    left: 60px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  .copyrights {
+    position: absolute;
+    bottom: 5%;
+    right: 60px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@keyframes floatingMailbox {
+  from {
+    top: 35%;
+  }
+  50% {
+    top: 20%;
+  }
+  to {
+    top: 35%;
+  }
+}

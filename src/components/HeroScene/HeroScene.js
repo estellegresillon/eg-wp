@@ -44,7 +44,6 @@ const HeroScene = () => {
       <div ref={heroScene} id="HeroScene">
         <nav>
           <div className="logo">
-            {/* <i className="fab fa-angrycreative" /> */}
             <div>ESTELLE</div>
             <div>GRéSILLON</div>
           </div>
@@ -80,8 +79,24 @@ const HeroScene = () => {
         />
         <div className="availability">
           <i className="far fa-clock" />
-          Available in January 2021
+          Available in 2021
         </div>
+        <img
+          className="small-stripes"
+          src="white_stripes.svg"
+          alt="stripe"
+          aria-hidden="true"
+        />
+        <img
+          className="big-stripes"
+          src="white_stripes.svg"
+          alt="stripe"
+          aria-hidden="true"
+        />
+        <div className="dot white-dot-top" />
+        <div className="dot white-dot-bottom" />
+        <div className="dot white-dot-medium-top" />
+        <div className="dot white-dot-medium" />
       </div>
       <div id="about">
         <img
@@ -98,10 +113,10 @@ const HeroScene = () => {
         />
         <div className="dot pink-dot-top" />
         <div className="dot pink-dot-bottom" />
-        <div className="dot yellow-dot-medium" />
+        <div className="dot dark-blue-dot-medium" />
         <div className="dot blue-dot-top" />
         <div className="dot blue-dot-medium" />
-        <div className="dot yellow-dot-bottom" />
+        <div className="dot dark-blue-dot-bottom" />
         <img src="floppy.png" alt="floppy" className="floppy" />
         <img src="bulb.png" alt="bulb" className="bulb" />
         <div className="girl-wrapper">
@@ -118,10 +133,10 @@ const HeroScene = () => {
           <div className="intro">
             I am Estelle, a front-end developer and a designer. <br />
             <br />
-            With a passion for design and interaction, my goal is to create
-            websites and apps with{" "}
+            With a passion for code and design, my goal is to create websites
+            and apps with{" "}
             <strong>
-              a clean code, high quality design and a compelling user experience
+              a clean code, high quality UI and a compelling user experience
             </strong>
             .
             <br />
@@ -138,15 +153,16 @@ const HeroScene = () => {
             <br />
             Always yearning to achieve more, I love participating in new
             projects both professionally and personally. Feel free to contact me
-            as I'd love to hear about your project !
+            as I'd love to hear about your project and engage in new challenges
+            !
           </div>
           <div className="contact-button">
             let's get started <i className="fas fa-arrow-right" />
           </div>
         </div>
       </div>
-      <div id="skills">design: paint / code computuer</div>
-      <div id="works">pro : diamond / perso : folder</div>
+      <div id="skills">pro : diamond / perso : folder</div>
+      <div id="works">design: paint / code computuer</div>
       <div id="contact">mailbox 3D</div>
       <div id="footer">box</div>
     </>

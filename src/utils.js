@@ -3,6 +3,7 @@ import PricingComparator from "components/PricingComparator";
 import GamePadWrapper from "components/GamePad";
 import CreditCardForm from "components/CreditCardForm";
 import HeroScene from "components/HeroScene";
+import HeroScene3D from "components/3DHeroScene";
 
 export const FRONT_END_CHALLENGES = [
   { name: "Stripe Menu", link: "/stripe-menu", component: StripeMenu },
@@ -25,5 +26,10 @@ export const FRONT_END_CHALLENGES = [
     name: "Hero Scene",
     link: "/hero-scene",
     component: HeroScene,
+  },
+  {
+    name: "3D Hero Scene",
+    link: "/3d-hero-scene",
+    component: HeroScene3D,
   },
 ];
