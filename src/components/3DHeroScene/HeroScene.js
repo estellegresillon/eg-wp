@@ -21,7 +21,11 @@ const HeroScene = () => {
         <div className="subtitle">
           ReactJs - Typescript - NextJs - Redux - Websockets
         </div>
-        <img className="hero-mailbox" src="mailbox.png" alt="mailbox" />
+        <img
+          className="hero-mailbox"
+          src="mailboxblue-small.png"
+          alt="mailbox"
+        />
         <div className="availability">
           <i className="far fa-clock" />
           Available in 2021
