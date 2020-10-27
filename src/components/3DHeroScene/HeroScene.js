@@ -23,7 +23,7 @@ const HeroScene = () => {
         </div>
         <img
           className="hero-mailbox"
-          src="mailboxblue-small.png"
+          src="/mailboxblue-small.png"
           alt="mailbox"
         />
         <div className="availability">
