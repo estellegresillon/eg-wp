@@ -2,7 +2,6 @@ import StripeMenu from "components/StripeMenu";
 import PricingComparator from "components/PricingComparator";
 import GamePadWrapper from "components/GamePad";
 import CreditCardForm from "components/CreditCardForm";
-import NewPortfolioHome from "components/NewPortfolio/Home";
 import HeroScene3D from "components/3DHeroScene";
 
 export const FRONT_END_CHALLENGES = [
@@ -21,11 +20,6 @@ export const FRONT_END_CHALLENGES = [
     name: "Credit Card Form",
     link: "/credit-card-form",
     component: CreditCardForm,
-  },
-  {
-    name: "New Portfolio Home",
-    link: "/new-portfolio-home",
-    component: NewPortfolioHome,
   },
   {
     name: "3D Hero Scene",
