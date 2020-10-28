@@ -4,7 +4,7 @@ import { I18nextProvider } from "react-i18next";
 import { BrowserRouter, Route } from "react-router-dom";
 
 import "assets/styles/base.scss";
-import Home from "components/Home";
+import Home from "components";
 import { FRONT_END_CHALLENGES } from "utils";
 import i18n from "locales/i18n-config";
 
@@ -12,14 +12,17 @@ const App = () => (
   <BrowserRouter>
     <React.Fragment>
       <Route exact path="/" component={Home} />
-      {FRONT_END_CHALLENGES.map((challenge) => (
-        <Route
-          exact
-          path={challenge.link}
-          component={challenge.component}
-          key={challenge.name}
-        />
-      ))}
+      {FRONT_END_CHALLENGES.map(
+        (challenge) =>
+          challenge.component && (
+            <Route
+              exact
+              path={challenge.link}
+              component={challenge.component}
+              key={challenge.name}
+            />
+          )
+      )}
     </React.Fragment>
   </BrowserRouter>
 );

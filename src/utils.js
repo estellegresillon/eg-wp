@@ -8,6 +8,11 @@ import HeroScene3D from "components/3DHeroScene";
 export const FRONT_END_CHALLENGES = [
   { name: "Stripe Menu", link: "/stripe-menu", component: StripeMenu },
   {
+    name: "One Page Love - I",
+    link: "http://santorini.estellegresillon.fr",
+    component: null,
+  },
+  {
     name: "Pricing Comparator",
     link: "/pricing-comparator",
     component: PricingComparator,
@@ -26,6 +31,11 @@ export const FRONT_END_CHALLENGES = [
     name: "Waves with Canvas",
     link: "/waves-canvas",
     component: WavesCanvas,
+  },
+  {
+    name: "One Page Love - II",
+    link: "http://zest.estellegresillon.fr",
+    component: null,
   },
   {
     name: "3D Hero Scene",
