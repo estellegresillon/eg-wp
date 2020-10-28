@@ -6,10 +6,20 @@ import WavesCanvas from "components/WavesCanvas";
 import HeroScene3D from "components/3DHeroScene";
 
 export const FRONT_END_CHALLENGES = [
+  {
+    name: "School project - Foodlab",
+    link: "https://foodlab.space",
+    component: null,
+  },
+  {
+    name: "Shopify Site - Otaku Market",
+    link: "https://www.otaku-market.com",
+    component: null,
+  },
   { name: "Stripe Menu", link: "/stripe-menu", component: StripeMenu },
   {
     name: "One Page Love - I",
-    link: "http://santorini.estellegresillon.fr",
+    link: "https://santorini.estellegresillon.fr",
     component: null,
   },
   {
@@ -34,7 +44,7 @@ export const FRONT_END_CHALLENGES = [
   },
   {
     name: "One Page Love - II",
-    link: "http://zest.estellegresillon.fr",
+    link: "https://zest.estellegresillon.fr",
     component: null,
   },
   {
