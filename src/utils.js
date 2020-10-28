@@ -2,6 +2,7 @@ import StripeMenu from "components/StripeMenu";
 import PricingComparator from "components/PricingComparator";
 import GamePadWrapper from "components/GamePad";
 import CreditCardForm from "components/CreditCardForm";
+import WavesCanvas from "components/WavesCanvas";
 import HeroScene3D from "components/3DHeroScene";
 
 export const FRONT_END_CHALLENGES = [
@@ -20,6 +21,11 @@ export const FRONT_END_CHALLENGES = [
     name: "Credit Card Form",
     link: "/credit-card-form",
     component: CreditCardForm,
+  },
+  {
+    name: "Waves with Canvas",
+    link: "/waves-canvas",
+    component: WavesCanvas,
   },
   {
     name: "3D Hero Scene",

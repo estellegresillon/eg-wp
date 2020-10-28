@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 
 import "./HeroScene.scss";
 
@@ -26,10 +27,9 @@ const HeroScene = () => {
           src="/mailboxblue-small.png"
           alt="mailbox"
         />
-        <div className="availability">
-          <i className="far fa-clock" />
-          Available in 2021
-        </div>
+        <Link to="/" className="button-goback">
+          GO BACK
+        </Link>
         <div className="copyrights">
           Copyright Estelle Grésillon © 2020 - Terms of use
         </div>
