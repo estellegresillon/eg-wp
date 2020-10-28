@@ -38,8 +38,12 @@ const StripeMenu = () => {
         <i className="fas fa-arrow-circle-up" />
         <h3>Hover the three menu items to try it out.</h3>
       </div>
-      <img className="buildings" src="/smallbuildings.jpg" alt="buildings" />
-      <img className="tower" src="/smalltower.jpg" alt="small tower" />
+      <img
+        className="buildings"
+        src="/smallbuildings-small.jpg"
+        alt="buildings"
+      />
+      <img className="tower" src="/smalltower-small.jpg" alt="small tower" />
     </div>
   );
 };
