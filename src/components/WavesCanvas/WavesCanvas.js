@@ -5,7 +5,7 @@ import SimplexNoise from "simplex-noise";
 
 import "./WavesCanvas.scss";
 
-const FRENQUENCY = 100;
+const INITIAL_FRENQUENCY = 20;
 
 const WavesCanvas = () => {
   const canvasRef = useRef(null);
@@ -14,7 +14,7 @@ const WavesCanvas = () => {
 
   const simplex = new SimplexNoise();
 
-  const initialize = () => {
+  const initialize = (frequency) => {
     const w = window.innerWidth;
     const h = window.innerHeight;
     const cx = w / 2;
@@ -29,7 +29,7 @@ const WavesCanvas = () => {
       h,
       cx,
       cy,
-      count: Math.floor(w / FRENQUENCY),
+      count: Math.floor(w / frequency),
       xoff: 0,
       xinc: 0.05,
       yoff: 0,
@@ -116,11 +116,15 @@ const WavesCanvas = () => {
   useEffect(() => {
     const gui = new dat.GUI(),
       guiSet = {
-        frequency: FRENQUENCY,
+        frequency: INITIAL_FRENQUENCY,
+        reset: () => {
+          initialize(guiSet.frequency);
+        },
       };
 
-    gui.add(guiSet, "frequency");
-    dat.GUI.toggleHide();
+    gui.add(guiSet, "frequency").min(5).max(100);
+    gui.add(guiSet, "reset");
+    //dat.GUI.toggleHide();
 
     window.addEventListener("resize", initialize);
     return () => window.removeEventListener("resize", initialize);
@@ -131,7 +135,7 @@ const WavesCanvas = () => {
       const c = canvasRef.current;
       const context = c.getContext("2d");
       setCtx(context);
-      initialize();
+      initialize(INITIAL_FRENQUENCY);
     }
   }, [canvasRef]);
 
