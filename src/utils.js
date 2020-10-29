@@ -3,7 +3,7 @@ import PricingComparator from "components/PricingComparator";
 import GamePadWrapper from "components/GamePad";
 import CreditCardForm from "components/CreditCardForm";
 import WavesCanvas from "components/WavesCanvas";
-import HeroScene3D from "components/3DHeroScene";
+import ColorfulHeroScene from "components/ColorfulHeroScene";
 
 export const FRONT_END_CHALLENGES = [
   {
@@ -48,8 +48,8 @@ export const FRONT_END_CHALLENGES = [
     component: null,
   },
   {
-    name: "3D Hero Scene",
-    link: "/3d-hero-scene",
-    component: HeroScene3D,
+    name: "Colorful Hero Scene",
+    link: "/colorful-hero-scene",
+    component: ColorfulHeroScene,
   },
 ];
