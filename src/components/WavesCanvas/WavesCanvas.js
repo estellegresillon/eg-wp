@@ -127,7 +127,10 @@ const WavesCanvas = () => {
     //dat.GUI.toggleHide();
 
     window.addEventListener("resize", initialize);
-    return () => window.removeEventListener("resize", initialize);
+    return () => {
+      window.removeEventListener("resize", initialize);
+      gui.destroy();
+    };
   }, []);
 
   useEffect(() => {
