@@ -147,6 +147,9 @@ const WavesCanvas = () => {
 
   return (
     <div id="Waves-Canvas">
+      <div className="waves-explanations">
+        Change the frequency and hit the reset button.
+      </div>
       <Link to="/" className="button-goback">
         GO BACK
       </Link>

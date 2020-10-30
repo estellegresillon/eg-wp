@@ -18,7 +18,9 @@ const ColorfulHeroScene = () => {
       <h1>
         <div>Hello, world</div>
       </h1>
-      <div className="subtitle">This a hero scene with strong colors.</div>
+      <div className="subtitle">
+        This is a hero scene with an animated gradient.
+      </div>
       <img className="clock-blue" src="/clock.png" alt="clock blue" />
       <img className="clock-orange" src="/clock1.png" alt="clock orange" />
       <Link to="/" className="button-goback">
