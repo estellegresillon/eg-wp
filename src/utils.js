@@ -3,7 +3,6 @@ import PricingComparator from "components/PricingComparator";
 import GamePadWrapper from "components/GamePad";
 import CreditCardForm from "components/CreditCardForm";
 import WavesCanvas from "components/WavesCanvas";
-import ColorfulHeroScene from "components/ColorfulHeroScene";
 
 export const FRONT_END_CHALLENGES = [
   {
@@ -46,10 +45,5 @@ export const FRONT_END_CHALLENGES = [
     name: "One Page Love - II",
     link: "https://zest.estellegresillon.fr",
     component: null,
-  },
-  {
-    name: "Colorful Hero Scene",
-    link: "/colorful-hero-scene",
-    component: ColorfulHeroScene,
   },
 ];
