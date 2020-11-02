@@ -1,5 +1,4 @@
 import React, { useCallback, useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
 import * as dat from "dat.gui";
 import SimplexNoise from "simplex-noise";
 
@@ -153,9 +152,13 @@ const WavesCanvas = () => {
       <div className="waves-explanations">
         Change the frequency and hit the reset button.
       </div>
-      <Link to="/" className="button-goback">
+      <a
+        href="https://blog.estellegresillon.fr/new-beginnings/"
+        alt="go back"
+        className="button-goback"
+      >
         GO BACK
-      </Link>
+      </a>
       <canvas ref={canvasRef}></canvas>
     </div>
   );
