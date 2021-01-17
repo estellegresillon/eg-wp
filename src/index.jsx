@@ -7,10 +7,12 @@ import "assets/styles/base.scss";
 import Home from "components";
 import { FRONT_END_CHALLENGES } from "utils";
 import i18n from "locales/i18n-config";
+import Menu from "components/common/Menu";
 
 const App = () => (
   <BrowserRouter>
     <React.Fragment>
+      <Menu />
       <Route exact path="/" component={Home} />
       {FRONT_END_CHALLENGES.map(
         (challenge) =>
