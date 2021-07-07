@@ -29,6 +29,8 @@ const App = () => (
   </BrowserRouter>
 );
 
+console.log("hi");
+
 const rootElement = document.getElementById("root");
 
 if (rootElement.hasChildNodes()) {
